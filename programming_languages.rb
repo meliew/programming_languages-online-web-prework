@@ -9,10 +9,6 @@
             end
             new_hash[language][:style] = [style]
           end
-          # languages.each do |style, name|
-          # if name == [language]
-          # [:style] << style
-          # end
         end
       new_hash
       end
