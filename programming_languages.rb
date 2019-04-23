@@ -1,13 +1,22 @@
 
 def reformat_languages(languages)
-  new_hash = {}
-      languages.each do |style, name|
-        name.each do |language, details|
-        new_hash[language] = {}
+  def reformat_languages(languages)
+        new_hash = {}
+        languages.each do |style, name|
+          name.each do |language, type|
+            new_hash[language] = {} 
+            type.each do |details|
+              new_hash[language] = type
+            end
+            new_hash[language][:style] = [style]
+          end
+          # languages.each do |style, name|
+          # if name == [language]
+          # [:style] << style
+          # end
+        end
+      new_hash
       end
-end
-new_hash
-end
 
 
 #iterate over the language hash
