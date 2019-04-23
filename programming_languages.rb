@@ -6,5 +6,5 @@ end
 end
 
 
-#iterate over the language hash 
-#create a new hash that has the language as a key, and value will be another hash with type and style. 
+#iterate over the language hash
+#create a new hash that has the language as a key, and value will be another hash with type and style.
